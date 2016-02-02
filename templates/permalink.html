@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if time %}
+    <p>The cache is {{time}}s old</p>
+  {% endif %}
+  {{post.render() | safe}}
+{% endblock %}
